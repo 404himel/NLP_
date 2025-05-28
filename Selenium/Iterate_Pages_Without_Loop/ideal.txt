@@ -1,0 +1,9 @@
+To iterate through all pages using only the "Next Page" button, you can use its XPath and the .click() function inside a loop. The idea is to:
+
+    ~ Locate the "Next Page" button using its XPath.
+
+    ~ Click the button to load the next set of data.
+
+    ~ Wait for new content to appear.
+
+    ~ Repeat until the "Next Page" button is no longer available or clickable.
