@@ -31,14 +31,9 @@ for loc in locations:
         shop_name = None
 
     try:
-        review = loc.find_element(By.CSS_SELECTOR, '.MW4etd').text
+        review = loc.find_element(By.CSS_SELECTOR, '.W4Efsd').text
     except:
         review = None
-
-    try:
-        location = loc.find_element(By.CSS_SELECTOR, '.W4Efsd').text
-    except:
-        location = None
 
     try:
         phone_number = loc.find_element(By.CSS_SELECTOR, '.UsdlK').text
@@ -54,7 +49,6 @@ for loc in locations:
     results.append({
         'shop_name': shop_name,
         'Review': review,
-        'Location': location,
         'Number': phone_number,
         'img': img_url
     })
